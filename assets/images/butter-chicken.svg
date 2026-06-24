@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Butter Chicken Illustration</title>
+  <desc id="desc">Warm restaurant artwork representing butter chicken.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2e3f53" />
+      <stop offset="100%" stop-color="#c97a2b" />
+    </linearGradient>
+    <radialGradient id="plate" cx="50%" cy="45%" r="44%">
+      <stop offset="0%" stop-color="#fff6ea" />
+      <stop offset="100%" stop-color="#eadcc6" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)" />
+  <circle cx="220" cy="160" r="180" fill="rgba(255,255,255,0.08)" />
+  <circle cx="970" cy="760" r="220" fill="rgba(255,255,255,0.08)" />
+  <ellipse cx="600" cy="500" rx="290" ry="205" fill="url(#plate)" />
+  <ellipse cx="600" cy="500" rx="235" ry="155" fill="#b85f2f" />
+  <circle cx="520" cy="455" r="36" fill="#f1b266" />
+  <circle cx="610" cy="485" r="42" fill="#f3bf77" />
+  <circle cx="695" cy="452" r="34" fill="#efaa62" />
+  <circle cx="555" cy="548" r="37" fill="#e79a56" />
+  <circle cx="660" cy="545" r="39" fill="#f4c27a" />
+  <path d="M440 372c40-25 96-38 162-38 70 0 132 16 172 47" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="24" stroke-linecap="round" />
+  <g fill="#3f7b4d">
+    <circle cx="488" cy="380" r="8" />
+    <circle cx="728" cy="510" r="10" />
+    <circle cx="622" cy="420" r="8" />
+    <circle cx="566" cy="592" r="9" />
+  </g>
+  <text x="88" y="718" fill="#fff8f0" font-family="Georgia, serif" font-size="84" font-weight="700">
+    Butter Chicken
+  </text>
+  <text x="92" y="782" fill="#f4e7d3" font-family="Poppins, Arial, sans-serif" font-size="28" letter-spacing="4">
+    RICH . COMFORTING . GUEST FAVOURITE
+  </text>
+</svg>

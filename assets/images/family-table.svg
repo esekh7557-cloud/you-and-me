@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Family Table Illustration</title>
+  <desc id="desc">Illustration of family dining at a restaurant table.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#233449" />
+      <stop offset="100%" stop-color="#c97a2b" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)" />
+  <ellipse cx="600" cy="520" rx="360" ry="180" fill="#f4e7d3" />
+  <ellipse cx="600" cy="520" rx="290" ry="130" fill="#f7f0e2" />
+  <circle cx="430" cy="334" r="58" fill="#f0c38f" />
+  <circle cx="600" cy="288" r="66" fill="#f0c38f" />
+  <circle cx="774" cy="334" r="58" fill="#f0c38f" />
+  <rect x="380" y="388" width="100" height="166" rx="42" fill="#324355" />
+  <rect x="548" y="344" width="104" height="212" rx="42" fill="#324355" />
+  <rect x="720" y="388" width="100" height="166" rx="42" fill="#324355" />
+  <circle cx="520" cy="520" r="40" fill="#de8c43" />
+  <circle cx="690" cy="500" r="38" fill="#b55a2b" />
+  <circle cx="610" cy="578" r="44" fill="#d9a862" />
+  <text x="88" y="726" fill="#fff8f0" font-family="Georgia, serif" font-size="84" font-weight="700">
+    Family Dining
+  </text>
+  <text x="92" y="788" fill="#f4e7d3" font-family="Poppins, Arial, sans-serif" font-size="28" letter-spacing="4">
+    SHARED TABLES . CELEBRATIONS . EASY MOMENTS
+  </text>
+</svg>

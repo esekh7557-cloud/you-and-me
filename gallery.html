@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | You and Me Multi Cuisine Arpora</title>
+    <meta
+      name="description"
+      content="Browse the gallery of You and Me Multi Cuisine in Arpora featuring restaurant ambience, dining spaces, seafood, and family dining moments."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body class="loading">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="shell nav-shell">
+        <a class="brand" href="index.html" aria-label="You and Me Multi Cuisine home">
+          <span class="brand-mark">YM</span>
+          <span class="brand-copy">
+            <strong>You and Me</strong>
+            <small>Multi Cuisine • Arpora, Goa</small>
+          </span>
+        </a>
+        <button
+          class="mobile-toggle"
+          type="button"
+          data-mobile-toggle
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Toggle menu</span>
+        </button>
+        <nav class="site-nav" id="site-nav" data-site-nav aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="menu.html">Menu</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="reservations.html">Reservations</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="shell page-hero-panel reveal">
+          <div class="page-copy">
+            <p class="eyebrow">Gallery</p>
+            <h1>See the mood, flavours, and shared-table moments</h1>
+            <p class="lead" style="margin-top: 1rem; max-width: 58ch">
+              Filter by atmosphere, food, and family dining to explore the visual side of You and
+              Me Multi Cuisine.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" data-gallery-root>
+        <div class="shell">
+          <div class="gallery-toolbar">
+            <div>
+              <p class="eyebrow">Browse By Category</p>
+              <h2 style="margin: 0">
+                Restaurant, food, seafood, and more
+              </h2>
+            </div>
+            <div class="filter-row" aria-label="Gallery filters">
+              <button class="filter-chip" type="button" data-gallery-filter="all" aria-pressed="true">
+                All
+              </button>
+              <button
+                class="filter-chip"
+                type="button"
+                data-gallery-filter="restaurant"
+                aria-pressed="false"
+              >
+                Restaurant
+              </button>
+              <button
+                class="filter-chip"
+                type="button"
+                data-gallery-filter="dining"
+                aria-pressed="false"
+              >
+                Dining Area
+              </button>
+              <button class="filter-chip" type="button" data-gallery-filter="food" aria-pressed="false">
+                Food
+              </button>
+              <button
+                class="filter-chip"
+                type="button"
+                data-gallery-filter="seafood"
+                aria-pressed="false"
+              >
+                Seafood
+              </button>
+              <button
+                class="filter-chip"
+                type="button"
+                data-gallery-filter="family"
+                aria-pressed="false"
+              >
+                Family Dining
+              </button>
+            </div>
+          </div>
+
+          <div class="gallery-grid">
+            <article class="gallery-card tall reveal" data-gallery-item data-category="restaurant">
+              <div class="gallery-media">
+                <button
+                  class="gallery-trigger"
+                  type="button"
+                  data-lightbox-src="assets/images/dining-room.png"
+                  data-lightbox-alt="Warm restaurant interior with amber lighting"
+                  data-lightbox-caption="A warm dining setting designed for relaxed meals in Arpora."
+                >
+                  <img
+                    src="assets/images/dining-room.png"
+                    alt="Warm restaurant interior with amber lighting"
+                    width="1200"
+                    height="900"
+                  />
+                </button>
+              </div>
+              <div class="gallery-copy">
+                <span class="tag">Restaurant</span>
+                <h3>Signature Dining Room</h3>
+                <p class="muted">Comfortable seating and a polished evening atmosphere.</p>
+              </div>
+            </article>
+
+            <article class="gallery-card reveal" data-gallery-item data-category="food">
+              <div class="gallery-media">
+                <button
+                  class="gallery-trigger"
+                  type="button"
+                  data-lightbox-src="assets/images/butter-chicken.png"
+                  data-lightbox-alt="Butter Chicken served in a dark bowl"
+                  data-lightbox-caption="One of the house favourites for guests craving a classic Indian curry."
+                >
+                  <img
+                    src="assets/images/butter-chicken.png"
+                    alt="Butter Chicken served in a dark bowl"
+                    width="1200"
+                    height="900"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+              <div class="gallery-copy">
+                <span class="tag">Food</span>
+                <h3>Butter Chicken</h3>
+                <p class="muted">Creamy, familiar, and one of the most searched-for favourites.</p>
+              </div>
+            </article>
+
+            <article class="gallery-card reveal" data-gallery-item data-category="seafood">
+              <div class="gallery-media">
+                <button
+                  class="gallery-trigger"
+                  type="button"
+                  data-lightbox-src="assets/images/king-prawns.png"
+                  data-lightbox-alt="King Prawns Masala on a white ceramic plate"
+                  data-lightbox-caption="A rich seafood signature for guests leaning into Goa's coastal side."
+                >
+                  <img
+                    src="assets/images/king-prawns.png"
+                    alt="King Prawns Masala on a white ceramic plate"
+                    width="1200"
+                    height="900"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+              <div class="gallery-copy">
+                <span class="tag">Seafood</span>
+                <h3>King Prawns Masala</h3>
+                <p class="muted">A standout choice for seafood lovers exploring the menu.</p>
+              </div>
+            </article>
+
+            <article class="gallery-card tall reveal" data-gallery-item data-category="family">
+              <div class="gallery-media">
+                <button
+                  class="gallery-trigger"
+                  type="button"
+                  data-lightbox-src="assets/images/family-table.png"
+                  data-lightbox-alt="Family enjoying a meal together at the restaurant"
+                  data-lightbox-caption="The kind of relaxed, shared-table energy the restaurant is built around."
+                >
+                  <img
+                    src="assets/images/family-table.png"
+                    alt="Family enjoying a meal together at the restaurant"
+                    width="1200"
+                    height="900"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+              <div class="gallery-copy">
+                <span class="tag">Family Dining</span>
+                <h3>Shared Table Moments</h3>
+                <p class="muted">Ideal for reunions, holiday dinners, and celebration meals.</p>
+              </div>
+            </article>
+
+            <article class="gallery-card reveal" data-gallery-item data-category="dining">
+              <div class="gallery-media">
+                <button
+                  class="gallery-trigger"
+                  type="button"
+                  data-lightbox-src="assets/images/goan-hospitality.png"
+                  data-lightbox-alt="Beautifully set restaurant table"
+                  data-lightbox-caption="A visual snapshot of the easygoing hospitality guests expect in Goa."
+                >
+                  <img
+                    src="assets/images/goan-hospitality.png"
+                    alt="Beautifully set restaurant table"
+                    width="1200"
+                    height="900"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+              <div class="gallery-copy">
+                <span class="tag">Dining Area</span>
+                <h3>Welcoming Table Setup</h3>
+                <p class="muted">Simple details that make meals feel comfortable and considered.</p>
+              </div>
+            </article>
+
+            <article class="gallery-card reveal" data-gallery-item data-category="food">
+              <div class="gallery-media">
+                <button
+                  class="gallery-trigger"
+                  type="button"
+                  data-lightbox-src="assets/images/goan-fish-curry.png"
+                  data-lightbox-alt="Goan Fish Curry in a traditional clay bowl"
+                  data-lightbox-caption="A seafood-forward favourite with coastal comfort and everyday appeal."
+                >
+                  <img
+                    src="assets/images/goan-fish-curry.png"
+                    alt="Goan Fish Curry in a traditional clay bowl"
+                    width="1200"
+                    height="900"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+              <div class="gallery-copy">
+                <span class="tag">Food</span>
+                <h3>Goan Fish Curry</h3>
+                <p class="muted">Balanced tang, layered spice, and true coastal character.</p>
+              </div>
+            </article>
+
+            <article class="gallery-card reveal" data-gallery-item data-category="restaurant">
+              <div class="gallery-media">
+                <button
+                  class="gallery-trigger"
+                  type="button"
+                  data-lightbox-src="assets/images/chef-special.png"
+                  data-lightbox-alt="Multi-cuisine platter spread on restaurant table"
+                  data-lightbox-caption="A composed table scene suited to dates, small groups, and slower dinners."
+                >
+                  <img
+                    src="assets/images/chef-special.png"
+                    alt="Multi-cuisine platter spread on restaurant table"
+                    width="1200"
+                    height="900"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+              <div class="gallery-copy">
+                <span class="tag">Restaurant</span>
+                <h3>Evening Table Styling</h3>
+                <p class="muted">An elevated look that still feels warm and approachable.</p>
+              </div>
+            </article>
+
+            <article class="gallery-card reveal" data-gallery-item data-category="seafood">
+              <div class="gallery-media">
+                <button
+                  class="gallery-trigger"
+                  type="button"
+                  data-lightbox-src="assets/images/seafood-night.png"
+                  data-lightbox-alt="Luxurious seafood dinner spread"
+                  data-lightbox-caption="A wider look at the seafood-led side of the dining experience."
+                >
+                  <img
+                    src="assets/images/seafood-night.png"
+                    alt="Luxurious seafood dinner spread"
+                    width="1200"
+                    height="900"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+              <div class="gallery-copy">
+                <span class="tag">Seafood</span>
+                <h3>Coastal Dinner Spread</h3>
+                <p class="muted">Built for guests who want a memorable seafood table in Goa.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="lightbox" data-lightbox aria-hidden="true">
+      <div class="lightbox-dialog">
+        <button class="lightbox-close" type="button" aria-label="Close image" data-lightbox-close>
+          ×
+        </button>
+        <img src="" alt="" data-lightbox-image />
+        <div class="lightbox-caption" data-lightbox-caption></div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="shell">
+        <div class="footer-grid">
+          <div>
+            <a class="brand" href="index.html">
+              <span class="brand-mark">YM</span>
+              <span class="brand-copy">
+                <strong>You and Me</strong>
+                <small>Multi Cuisine • Arpora, Goa</small>
+              </span>
+            </a>
+            <p class="muted" style="margin-top: 1rem; max-width: 50ch">
+              Explore our restaurant, dishes, and dining atmosphere through photos taken at You and Me.
+            </p>
+          </div>
+          <div class="footer-links">
+            <strong>Explore</strong>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="reviews.html">Reviews</a>
+          </div>
+          <div class="footer-contact">
+            <strong>Visit Next</strong>
+            <a href="contact.html">Get directions</a>
+            <a href="reservations.html">Book your table</a>
+            <a href="mailto:reservations@youandmemulticuisine.com">Email the team</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-year></span> You and Me Multi Cuisine</span>
+          <span>Multi-cuisine dining in Arpora, Goa.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

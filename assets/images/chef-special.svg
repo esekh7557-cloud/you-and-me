@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Chef Special Illustration</title>
+  <desc id="desc">Illustration of a signature chef's special platter.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff4e5" />
+      <stop offset="100%" stop-color="#d99852" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)" />
+  <circle cx="1040" cy="160" r="170" fill="rgba(255,255,255,0.28)" />
+  <circle cx="170" cy="740" r="190" fill="rgba(255,255,255,0.18)" />
+  <ellipse cx="600" cy="470" rx="325" ry="212" fill="#ffffff" opacity="0.9" />
+  <ellipse cx="600" cy="470" rx="258" ry="156" fill="#d58a44" />
+  <circle cx="535" cy="430" r="44" fill="#f5d28e" />
+  <circle cx="658" cy="430" r="44" fill="#f0b86c" />
+  <circle cx="600" cy="535" r="52" fill="#b05a31" />
+  <rect x="790" y="332" width="40" height="210" rx="18" fill="#324355" />
+  <rect x="838" y="332" width="18" height="210" rx="9" fill="#324355" />
+  <text x="88" y="726" fill="#1f2937" font-family="Georgia, serif" font-size="84" font-weight="700">
+    Chef Special
+  </text>
+  <text x="92" y="786" fill="#5b6270" font-family="Poppins, Arial, sans-serif" font-size="28" letter-spacing="4">
+    SIGNATURE PLATTER . RICH TEXTURE . HOUSE STYLE
+  </text>
+</svg>

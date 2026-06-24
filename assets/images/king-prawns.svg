@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">King Prawns Masala Illustration</title>
+  <desc id="desc">Warm restaurant artwork representing king prawns masala.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#102d3f" />
+      <stop offset="100%" stop-color="#cb7e2d" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)" />
+  <circle cx="1035" cy="155" r="170" fill="rgba(255,255,255,0.08)" />
+  <circle cx="190" cy="760" r="210" fill="rgba(255,255,255,0.06)" />
+  <ellipse cx="600" cy="470" rx="320" ry="210" fill="#efe0c7" />
+  <ellipse cx="600" cy="470" rx="260" ry="158" fill="#934a30" />
+  <path d="M463 472c48-66 125-98 199-82 43 9 79 33 110 76-20 31-44 55-69 72-57 38-125 45-179 24-25-10-49-25-70-45z" fill="#f19a4e" />
+  <path d="M540 454c30-26 60-37 95-35 34 2 69 19 100 50" fill="none" stroke="#ffd59e" stroke-width="18" stroke-linecap="round" />
+  <path d="M468 474c-34 14-66 44-85 82" fill="none" stroke="#ffd59e" stroke-width="12" stroke-linecap="round" />
+  <path d="M761 472c43 17 74 43 93 78" fill="none" stroke="#ffd59e" stroke-width="12" stroke-linecap="round" />
+  <g fill="#2f6d4f">
+    <circle cx="504" cy="418" r="8" />
+    <circle cx="684" cy="390" r="9" />
+    <circle cx="720" cy="548" r="8" />
+    <circle cx="548" cy="556" r="8" />
+  </g>
+  <text x="86" y="724" fill="#fff8f0" font-family="Georgia, serif" font-size="84" font-weight="700">
+    King Prawns Masala
+  </text>
+  <text x="92" y="786" fill="#f4e7d3" font-family="Poppins, Arial, sans-serif" font-size="28" letter-spacing="4">
+    COASTAL . LUXURIOUS . SIGNATURE SEAFOOD
+  </text>
+</svg>

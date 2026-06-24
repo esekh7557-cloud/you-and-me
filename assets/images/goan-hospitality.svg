@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Goan Hospitality Illustration</title>
+  <desc id="desc">Illustration of a welcoming dining setup representing Goan hospitality.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4e7d3" />
+      <stop offset="100%" stop-color="#b66a2d" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)" />
+  <rect x="120" y="160" width="960" height="520" rx="46" fill="rgba(255,255,255,0.2)" />
+  <rect x="210" y="250" width="780" height="340" rx="34" fill="#fff8f0" opacity="0.88" />
+  <circle cx="420" cy="420" r="84" fill="#e0a65c" />
+  <circle cx="780" cy="420" r="84" fill="#324355" />
+  <path d="M500 436c40-44 87-67 146-67 58 0 106 22 143 67" fill="none" stroke="#c97a2b" stroke-width="24" stroke-linecap="round" />
+  <circle cx="512" cy="436" r="16" fill="#ffffff" />
+  <circle cx="694" cy="436" r="16" fill="#ffffff" />
+  <text x="88" y="736" fill="#1f2937" font-family="Georgia, serif" font-size="84" font-weight="700">
+    Goan Hospitality
+  </text>
+  <text x="92" y="794" fill="#5b6270" font-family="Poppins, Arial, sans-serif" font-size="28" letter-spacing="4">
+    WELCOMING . RELAXED . MADE TO FEEL AT HOME
+  </text>
+</svg>

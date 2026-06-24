@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Dining Room Illustration</title>
+  <desc id="desc">Illustration of a warm dining room for a restaurant website.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4e7d3" />
+      <stop offset="100%" stop-color="#d8b282" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)" />
+  <rect x="0" y="0" width="1200" height="320" fill="#1f2937" opacity="0.9" />
+  <circle cx="260" cy="180" r="55" fill="#f7d39d" opacity="0.9" />
+  <circle cx="600" cy="180" r="55" fill="#f7d39d" opacity="0.9" />
+  <circle cx="940" cy="180" r="55" fill="#f7d39d" opacity="0.9" />
+  <rect x="120" y="450" width="960" height="220" rx="40" fill="#8b5a3b" />
+  <rect x="175" y="420" width="850" height="150" rx="34" fill="#fff6ea" />
+  <rect x="185" y="570" width="120" height="90" rx="28" fill="#324355" />
+  <rect x="895" y="570" width="120" height="90" rx="28" fill="#324355" />
+  <rect x="360" y="610" width="120" height="130" rx="32" fill="#324355" />
+  <rect x="720" y="610" width="120" height="130" rx="32" fill="#324355" />
+  <ellipse cx="600" cy="505" rx="110" ry="34" fill="#e9d1aa" />
+  <text x="90" y="786" fill="#1f2937" font-family="Georgia, serif" font-size="84" font-weight="700">
+    Warm Dining Room
+  </text>
+  <text x="94" y="844" fill="#5b6270" font-family="Poppins, Arial, sans-serif" font-size="28" letter-spacing="4">
+    COMFORTABLE . INVITING . MADE FOR LONGER MEALS
+  </text>
+</svg>

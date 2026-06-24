@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Goan Fish Curry Illustration</title>
+  <desc id="desc">Restaurant artwork representing Goan fish curry.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f5d63" />
+      <stop offset="100%" stop-color="#d49a4a" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)" />
+  <circle cx="180" cy="180" r="160" fill="rgba(255,255,255,0.08)" />
+  <circle cx="970" cy="740" r="240" fill="rgba(255,255,255,0.05)" />
+  <ellipse cx="600" cy="470" rx="300" ry="205" fill="#f5e6cc" />
+  <ellipse cx="600" cy="470" rx="244" ry="154" fill="#d07035" />
+  <path d="M450 480c60-54 136-73 218-48 44 13 79 38 108 70-40 43-83 68-130 80-87 22-170 2-237-54z" fill="#f4d8a9" opacity="0.92" />
+  <circle cx="535" cy="470" r="8" fill="#2b4f57" />
+  <circle cx="701" cy="464" r="8" fill="#2b4f57" />
+  <path d="M518 540c65 29 131 30 200 0" fill="none" stroke="#f6b55b" stroke-width="16" stroke-linecap="round" />
+  <g fill="#32734b">
+    <circle cx="498" cy="422" r="9" />
+    <circle cx="724" cy="510" r="9" />
+    <circle cx="623" cy="385" r="10" />
+    <circle cx="583" cy="553" r="7" />
+  </g>
+  <text x="88" y="720" fill="#fff8f0" font-family="Georgia, serif" font-size="84" font-weight="700">
+    Goan Fish Curry
+  </text>
+  <text x="92" y="784" fill="#f4e7d3" font-family="Poppins, Arial, sans-serif" font-size="28" letter-spacing="4">
+    COASTAL . TANGY . COMFORT IN A BOWL
+  </text>
+</svg>

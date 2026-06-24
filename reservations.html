@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservations | Book a Table at You and Me Multi Cuisine</title>
+    <meta
+      name="description"
+      content="Reserve a table at You and Me Multi Cuisine in Arpora, Goa for family dining, seafood dinners, group bookings, and special occasions."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body class="loading">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="shell nav-shell">
+        <a class="brand" href="index.html" aria-label="You and Me Multi Cuisine home">
+          <span class="brand-mark">YM</span>
+          <span class="brand-copy">
+            <strong>You and Me</strong>
+            <small>Multi Cuisine • Arpora, Goa</small>
+          </span>
+        </a>
+        <button
+          class="mobile-toggle"
+          type="button"
+          data-mobile-toggle
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Toggle menu</span>
+        </button>
+        <nav class="site-nav" id="site-nav" data-site-nav aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="menu.html">Menu</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="reservations.html">Reservations</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="shell page-hero-panel reveal">
+          <div class="page-copy">
+            <p class="eyebrow">Online Table Booking</p>
+            <h1>Reserve your table for lunch, dinner, or a special gathering</h1>
+            <p class="lead" style="margin-top: 1rem; max-width: 60ch">
+              Share your preferred time, guest count, and any notes. We'll help make the visit feel
+              smooth from the first click to the first course.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell contact-layout">
+          <article class="form-panel reveal">
+            <h2 style="margin-top: 0; font-family: 'Playfair Display', serif">Reserve Now</h2>
+            <p class="muted" style="margin-top: 0">
+              Fill in the details below and our team will confirm your booking shortly.
+            </p>
+            <form class="form-grid" data-demo-form data-success-label="Reservation request received">
+              <div class="form-grid two-col">
+                <div class="field">
+                  <label for="reservation-name">Name</label>
+                  <input id="reservation-name" name="name" type="text" required />
+                </div>
+                <div class="field">
+                  <label for="reservation-phone">Phone Number</label>
+                  <input id="reservation-phone" name="phone" type="tel" required />
+                </div>
+              </div>
+              <div class="form-grid two-col">
+                <div class="field">
+                  <label for="reservation-email">Email</label>
+                  <input id="reservation-email" name="email" type="email" required />
+                </div>
+                <div class="field">
+                  <label for="reservation-guests">Number of Guests</label>
+                  <select id="reservation-guests" name="guests" required>
+                    <option value="">Select guest count</option>
+                    <option>2 Guests</option>
+                    <option>4 Guests</option>
+                    <option>6 Guests</option>
+                    <option>8 Guests</option>
+                    <option>10+ Guests</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-grid two-col">
+                <div class="field">
+                  <label for="reservation-date">Date</label>
+                  <input id="reservation-date" name="date" type="date" required />
+                </div>
+                <div class="field">
+                  <label for="reservation-time">Time</label>
+                  <input id="reservation-time" name="time" type="time" required />
+                </div>
+              </div>
+              <div class="field">
+                <label for="reservation-notes">Special Request</label>
+                <textarea
+                  id="reservation-notes"
+                  name="message"
+                  placeholder="Tell us about birthdays, dietary preferences, or seating requests."
+                ></textarea>
+              </div>
+              <button class="btn" type="submit">Reserve Now</button>
+              <p class="form-status" data-form-status aria-live="polite"></p>
+            </form>
+          </article>
+
+          <div class="card-grid">
+            <article class="booking-card reveal">
+              <p class="eyebrow">Group Bookings</p>
+              <h3>Celebrations and larger tables made easier</h3>
+              <p>
+                Perfect for guests planning events that need good food, flexible timing, and a
+                comfortable indoor dining setup.
+              </p>
+              <ul class="mini-list">
+                <li>Birthday parties</li>
+                <li>Family gatherings</li>
+                <li>Corporate dinners</li>
+              </ul>
+            </article>
+            <article class="booking-card reveal">
+              <p class="eyebrow">Why Reserve Ahead</p>
+              <h3>Less waiting, smoother service</h3>
+              <p>
+                Advance reservations help us prepare seating, coordinate group needs, and make sure
+                your visit feels relaxed from the start.
+              </p>
+            </article>
+            <article class="booking-card reveal">
+              <p class="eyebrow">Need Directions?</p>
+              <h3>Visit us in Arpora, Goa</h3>
+              <p>
+                If you need help finding the restaurant or planning a larger dinner, our contact
+                page includes location details and a direct enquiry form.
+              </p>
+              <div class="btn-row" style="margin-top: 1rem">
+                <a class="btn btn-secondary" href="contact.html">Open Contact Page</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell">
+        <div class="footer-grid">
+          <div>
+            <a class="brand" href="index.html">
+              <span class="brand-mark">YM</span>
+              <span class="brand-copy">
+                <strong>You and Me</strong>
+                <small>Multi Cuisine • Arpora, Goa</small>
+              </span>
+            </a>
+            <p class="muted" style="margin-top: 1rem; max-width: 50ch">
+              Reserve your table for casual dining, celebrations, and group bookings in Arpora.
+            </p>
+          </div>
+          <div class="footer-links">
+            <strong>Discover</strong>
+            <a href="menu.html">View Menu</a>
+            <a href="gallery.html">Browse Gallery</a>
+            <a href="reviews.html">See Reviews</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="footer-contact">
+            <strong>Booking Support</strong>
+            <a href="mailto:reservations@youandmemulticuisine.com">reservations@youandmemulticuisine.com</a>
+            <a href="contact.html">Map &amp; directions</a>
+            <a href="about.html">About the restaurant</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-year></span> You and Me Multi Cuisine</span>
+          <span>Table reservations for Arpora, Goa.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

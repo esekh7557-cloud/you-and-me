@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu | You and Me Multi Cuisine Arpora</title>
+    <meta
+      name="description"
+      content="Explore the menu at You and Me Multi Cuisine in Arpora featuring vegetarian favourites, non-vegetarian mains, rice, breads, and beverages."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body class="loading">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="shell nav-shell">
+        <a class="brand" href="index.html" aria-label="You and Me Multi Cuisine home">
+          <span class="brand-mark">YM</span>
+          <span class="brand-copy">
+            <strong>You and Me</strong>
+            <small>Multi Cuisine • Arpora, Goa</small>
+          </span>
+        </a>
+        <button
+          class="mobile-toggle"
+          type="button"
+          data-mobile-toggle
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Toggle menu</span>
+        </button>
+        <nav class="site-nav" id="site-nav" data-site-nav aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="menu.html">Menu</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="reservations.html">Reservations</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="shell page-hero-panel reveal">
+          <div class="page-copy">
+            <p class="eyebrow">Explore Our Menu</p>
+            <h1>Classic comfort, coastal favourites, and crowd-pleasing mains</h1>
+            <p class="lead" style="margin-top: 1rem; max-width: 60ch">
+              Browse by category, search your favourites, and discover the dishes guests return to
+              most often at You and Me Multi Cuisine.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" data-menu-root>
+        <div class="shell">
+          <div class="menu-toolbar">
+            <div class="search-wrap">
+              <label for="menu-search">Search the menu</label>
+              <input
+                id="menu-search"
+                type="search"
+                placeholder="Try butter chicken, paneer, prawns, or rice"
+                data-menu-search
+              />
+            </div>
+            <div class="filter-row" aria-label="Menu category filters">
+              <button class="filter-chip" type="button" data-menu-filter="all" aria-pressed="true">
+                All
+              </button>
+              <button class="filter-chip" type="button" data-menu-filter="veg" aria-pressed="false">
+                Veg Mains
+              </button>
+              <button
+                class="filter-chip"
+                type="button"
+                data-menu-filter="non-veg"
+                aria-pressed="false"
+              >
+                Non-Veg Mains
+              </button>
+              <button class="filter-chip" type="button" data-menu-filter="rice" aria-pressed="false">
+                Rice &amp; Breads
+              </button>
+              <button
+                class="filter-chip"
+                type="button"
+                data-menu-filter="beverages"
+                aria-pressed="false"
+              >
+                Beverages
+              </button>
+            </div>
+          </div>
+
+          <section class="menu-section" data-menu-section>
+            <div class="menu-section-head">
+              <h2>Vegetarian Mains</h2>
+              <span class="tag">Freshly prepared comfort favourites</span>
+            </div>
+            <div class="menu-grid">
+              <article class="menu-item-card reveal" data-menu-item data-category="veg" data-name="Yellow Dal Tadka" data-keywords="lentils dal yellow tadka vegetarian">
+                <div class="menu-thumb">
+                  <img src="assets/images/chef-special.png" alt="Yellow Dal Tadka" width="1200" height="900" />
+                </div>
+                <div class="menu-copy">
+                  <h3>Yellow Dal Tadka</h3>
+                  <p>Comforting yellow lentils finished with a fragrant tempering.</p>
+                  <span class="price-tag">₹295</span>
+                </div>
+              </article>
+              <article class="menu-item-card reveal" data-menu-item data-category="veg" data-name="Dal Makhani" data-keywords="dal makhani black lentils creamy vegetarian">
+                <div class="menu-thumb">
+                  <img src="assets/images/chef-special.png" alt="Dal Makhani" width="1200" height="900" loading="lazy" />
+                </div>
+                <div class="menu-copy">
+                  <h3>Dal Makhani</h3>
+                  <p>Slow-cooked lentils with a rich, creamy finish.</p>
+                  <span class="price-tag">₹355</span>
+                </div>
+              </article>
+              <article class="menu-item-card reveal" data-menu-item data-category="veg" data-name="Aloo Jeera" data-keywords="potato cumin aloo jeera vegetarian">
+                <div class="menu-thumb">
+                  <img src="assets/images/chef-special.png" alt="Aloo Jeera" width="1200" height="900" loading="lazy" />
+                </div>
+                <div class="menu-copy">
+                  <h3>Aloo Jeera</h3>
+                  <p>Classic cumin-spiced potatoes with simple, comforting flavour.</p>
+                  <span class="price-tag">₹255</span>
+                </div>
+              </article>
+              <article class="menu-item-card reveal" data-menu-item data-category="veg" data-name="Veg Kolhapuri" data-keywords="veg kolhapuri spicy mixed vegetables">
+                <div class="menu-thumb">
+                  <img src="assets/images/chef-special.png" alt="Veg Kolhapuri" width="1200" height="900" loading="lazy" />
+                </div>
+                <div class="menu-copy">
+                  <h3>Veg Kolhapuri</h3>
+                  <p>Bold and spiced, with a rich masala base and mixed vegetables.</p>
+                  <span class="price-tag">₹295</span>
+                </div>
+              </article>
+              <article class="menu-item-card reveal" data-menu-item data-category="veg" data-name="Kadai Paneer" data-keywords="paneer kadai cottage cheese capsicum vegetarian">
+                <div class="menu-thumb">
+                  <img src="assets/images/chef-special.png" alt="Kadai Paneer" width="1200" height="900" loading="lazy" />
+                </div>
+                <div class="menu-copy">
+                  <h3>Kadai Paneer</h3>
+                  <p>Paneer in a robust masala with peppers and kitchen-fresh spice.</p>
+                  <span class="price-tag">₹295</span>
+                </div>
+              </article>
+              <article class="menu-item-card reveal" data-menu-item data-category="veg" data-name="Paneer Butter Masala" data-keywords="paneer butter masala rich creamy vegetarian">
+                <div class="menu-thumb">
+                  <img src="assets/images/chef-special.png" alt="Paneer Butter Masala" width="1200" height="900" loading="lazy" />
+                </div>
+                <div class="menu-copy">
+                  <h3>Paneer Butter Masala</h3>
+                  <p>Creamy tomato gravy with soft paneer and gentle warmth.</p>
+                  <span class="price-tag">₹355</span>
+                </div>
+              </article>
+              <article class="menu-item-card reveal" data-menu-item data-category="veg" data-name="Shahi Paneer" data-keywords="shahi paneer royal creamy vegetarian">
+                <div class="menu-thumb">
+                  <img src="assets/images/chef-special.png" alt="Shahi Paneer" width="1200" height="900" loading="lazy" />
+                </div>
+                <div class="menu-copy">
+                  <h3>Shahi Paneer</h3>
+                  <p>Silky, rich paneer curry finished with a royal touch.</p>
+                  <span class="price-tag">₹355</span>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="menu-section" data-menu-section>
+            <div class="menu-section-head">
+              <h2>Non-Vegetarian Mains</h2>
+              <span class="tag">Indian classics and seafood signatures</span>
+            </div>
+            <div class="menu-grid">
+              <article class="menu-item-card reveal" data-menu-item data-category="non-veg" data-name="Butter Chicken" data-keywords="butter chicken creamy tomato">
+                <div class="menu-thumb">
+                  <img src="assets/images/butter-chicken.png" alt="Butter Chicken" width="1200" height="900" />
+                </div>
+                <div class="menu-copy">
+                  <h3>Butter Chicken</h3>
+                  <p>Velvety tomato gravy wrapped around tender chicken pieces.</p>
+                  <span class="price-tag">₹455</span>
+                </div>
+              </article>
+              <article class="menu-item-card reveal" data-menu-item data-category="non-veg" data-name="Chicken Tikka Masala" data-keywords="chicken tikka masala charred curry">
+                <div class="menu-thumb">
+                  <img src="assets/images/butter-chicken.png" alt="Chicken Tikka Masala" width="1200" height="900" loading="lazy" />
+                </div>
+                <div class="menu-copy">
+                  <h3>Chicken Tikka Masala</h3>
+                  <p>Grilled chicken in a rich masala sauce with smoky depth.</p>
+                  <span class="price-tag">₹455</span>
+                </div>
+              </article>
+              <article class="menu-item-card reveal" data-menu-item data-category="non-veg" data-name="Kadai Chicken" data-keywords="kadai chicken capsicum masala">
+                <div class="menu-thumb">
+                  <img src="assets/images/butter-chicken.png" alt="Kadai Chicken" width="1200" height="900" loading="lazy" />
+                </div>
+                <div class="menu-copy">
+                  <h3>Kadai Chicken</h3>
+                  <p>Chicken cooked in an aromatic kadai masala with peppers.</p>
+                  <span class="price-tag">₹395</span>
+                </div>
+              </article>
+              <article class="menu-item-card reveal" data-menu-item data-category="non-veg" data-name="Chicken Lababdar" data-keywords="chicken lababdar rich north indian">
+                <div class="menu-thumb">
+                  <img src="assets/images/butter-chicken.png" alt="Chicken Lababdar" width="1200" height="900" loading="lazy" />
+                </div>
+                <div class="menu-copy">
+                  <h3>Chicken Lababdar</h3>
+                  <p>A rich and hearty curry with layered spice and texture.</p>
+                  <span class="price-tag">₹395</span>
+                </div>
+              </article>
+              <article class="menu-item-card reveal" data-menu-item data-category="non-veg" data-name="Mutton Rogan Josh" data-keywords="mutton rogan josh classic curry">
+                <div class="menu-thumb">
+                  <img src="assets/images/seafood-night.png" alt="Mutton Rogan Josh" width="1200" height="900" loading="lazy" />
+                </div>
+                <div class="menu-copy">
+                  <h3>Mutton Rogan Josh</h3>
+                  <p>Deep, aromatic curry with robust spice and slow-cooked character.</p>
+                  <span class="price-tag">₹495</span>
+                </div>
+              </article>
+              <article class="menu-item-card reveal" data-menu-item data-category="non-veg" data-name="Mutton Rara" data-keywords="mutton rara spiced curry">
+                <div class="menu-thumb">
+                  <img src="assets/images/seafood-night.png" alt="Mutton Rara" width="1200" height="900" loading="lazy" />
+                </div>
+                <div class="menu-copy">
+                  <h3>Mutton Rara</h3>
+                  <p>Bold and satisfying with a rich, intense masala profile.</p>
+                  <span class="price-tag">₹455</span>
+                </div>
+              </article>
+              <article class="menu-item-card reveal" data-menu-item data-category="non-veg" data-name="Sukha Mutton" data-keywords="sukha mutton dry masala">
+                <div class="menu-thumb">
+                  <img src="assets/images/seafood-night.png" alt="Sukha Mutton" width="1200" height="900" loading="lazy" />
+                </div>
+                <div class="menu-copy">
+                  <h3>Sukha Mutton</h3>
+                  <p>Dry-style mutton masala with rich, concentrated flavour.</p>
+                  <span class="price-tag">₹555</span>
+                </div>
+              </article>
+              <article class="menu-item-card reveal" data-menu-item data-category="non-veg" data-name="Goan Fish Curry" data-keywords="goan fish curry seafood coastal">
+                <div class="menu-thumb">
+                  <img src="assets/images/goan-fish-curry.png" alt="Goan Fish Curry" width="1200" height="900" loading="lazy" />
+                </div>
+                <div class="menu-copy">
+                  <h3>Goan Fish Curry</h3>
+                  <p>Coastal spice, balanced tang, and deeply comforting curry notes.</p>
+                  <span class="price-tag">₹355</span>
+                </div>
+              </article>
+              <article class="menu-item-card reveal" data-menu-item data-category="non-veg" data-name="Fish Tikka Masala" data-keywords="fish tikka masala seafood">
+                <div class="menu-thumb">
+                  <img src="assets/images/goan-fish-curry.png" alt="Fish Tikka Masala" width="1200" height="900" loading="lazy" />
+                </div>
+                <div class="menu-copy">
+                  <h3>Fish Tikka Masala</h3>
+                  <p>Grilled fish pieces folded into a flavourful masala sauce.</p>
+                  <span class="price-tag">₹455</span>
+                </div>
+              </article>
+              <article class="menu-item-card reveal" data-menu-item data-category="non-veg" data-name="King Prawns Masala" data-keywords="king prawns masala seafood prawns">
+                <div class="menu-thumb">
+                  <img src="assets/images/king-prawns.png" alt="King Prawns Masala" width="1200" height="900" loading="lazy" />
+                </div>
+                <div class="menu-copy">
+                  <h3>King Prawns Masala</h3>
+                  <p>Signature prawns in a rich masala with coastal warmth.</p>
+                  <span class="price-tag">₹695</span>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="menu-section" data-menu-section>
+            <div class="menu-section-head">
+              <h2>Rice &amp; Breads</h2>
+              <span class="tag">The perfect table companions</span>
+            </div>
+            <div class="menu-grid">
+              <article class="menu-item-card reveal" data-menu-item data-category="rice" data-name="Plain Rice" data-keywords="plain rice steamed">
+                <div class="menu-thumb">
+                  <img src="assets/images/dining-room.png" alt="Plain Rice" width="1200" height="900" loading="lazy" />
+                </div>
+                <div class="menu-copy">
+                  <h3>Plain Rice</h3>
+                  <p>Steamed rice served as a classic side for curries and seafood.</p>
+                  <span class="price-tag">₹185</span>
+                </div>
+              </article>
+              <article class="menu-item-card reveal" data-menu-item data-category="rice" data-name="Freshly Baked Breads" data-keywords="naan roti breads accompaniment">
+                <div class="menu-thumb">
+                  <img src="assets/images/dining-room.png" alt="Freshly Baked Breads" width="1200" height="900" loading="lazy" />
+                </div>
+                <div class="menu-copy">
+                  <h3>Freshly Baked Breads</h3>
+                  <p>Ask the team for the day's available breads to pair with your mains.</p>
+                  <span class="price-tag">Fresh Daily</span>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="menu-section" data-menu-section>
+            <div class="menu-section-head">
+              <h2>Beverages</h2>
+              <span class="tag">Coolers and classic refreshers</span>
+            </div>
+            <div class="menu-grid">
+              <article class="menu-item-card reveal" data-menu-item data-category="beverages" data-name="Fresh Lime Soda" data-keywords="fresh lime soda beverage cooler">
+                <div class="menu-thumb">
+                  <img src="assets/images/goan-hospitality.png" alt="Fresh Lime Soda" width="1200" height="900" loading="lazy" />
+                </div>
+                <div class="menu-copy">
+                  <h3>Fresh Lime Soda</h3>
+                  <p>A bright, easy refresher to balance rich curries and seafood plates.</p>
+                  <span class="price-tag">Seasonal</span>
+                </div>
+              </article>
+              <article class="menu-item-card reveal" data-menu-item data-category="beverages" data-name="House Refreshments" data-keywords="beverages drinks tea coffee coolers">
+                <div class="menu-thumb">
+                  <img src="assets/images/goan-hospitality.png" alt="House Refreshments" width="1200" height="900" loading="lazy" />
+                </div>
+                <div class="menu-copy">
+                  <h3>House Refreshments</h3>
+                  <p>Ask the team for juices, coolers, and warm drinks available today.</p>
+                  <span class="price-tag">Ask Team</span>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <div class="empty-state" data-menu-empty>
+            No dishes match that search yet. Try a broader term or switch the category filter.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell">
+        <div class="footer-grid">
+          <div>
+            <a class="brand" href="index.html">
+              <span class="brand-mark">YM</span>
+              <span class="brand-copy">
+                <strong>You and Me</strong>
+                <small>Multi Cuisine • Arpora, Goa</small>
+              </span>
+            </a>
+            <p class="muted" style="margin-top: 1rem; max-width: 50ch">
+              Signature curries, seafood favourites, rice, breads, and guest-loved classics from our kitchen to your table.
+            </p>
+          </div>
+          <div class="footer-links">
+            <strong>Quick Links</strong>
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="footer-contact">
+            <strong>Need Help?</strong>
+            <a href="reviews.html">See guest reviews</a>
+            <a href="reservations.html">Book a table</a>
+            <a href="mailto:reservations@youandmemulticuisine.com">reservations@youandmemulticuisine.com</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-year></span> You and Me Multi Cuisine</span>
+          <span>Arpora, Goa — Open for lunch and dinner.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

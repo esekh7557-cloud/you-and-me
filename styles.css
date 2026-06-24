@@ -4,30 +4,30 @@
    =================================================================== */
 
 :root {
-  /* Warm, organic color palette */
-  --color-primary: #b8742d;
-  --color-primary-deep: #8f5a1e;
-  --color-primary-light: #d4a464;
-  --color-secondary: #1c2028;
-  --color-accent: #f5e6d0;
-  --color-background: #faf7f2;
+  /* Premium Refined Light Palette */
+  --color-primary: #c98a2c;
+  --color-primary-deep: #a8701e;
+  --color-primary-light: #e8b15a;
+  --color-secondary: #0f172a;
+  --color-accent: #f8f1e5;
+  --color-background: #fdfbf9;
   --color-surface: #ffffff;
-  --color-surface-warm: #f7f0e6;
-  --color-surface-dark: #1a1611;
-  --color-text: #33302b;
-  --color-text-light: #6b6560;
-  --color-muted: #8a847d;
-  --color-border: rgba(45, 40, 35, 0.1);
-  --color-border-light: rgba(45, 40, 35, 0.06);
+  --color-surface-warm: #f6f3ed;
+  --color-surface-dark: #1e293b;
+  --color-text: #334155;
+  --color-text-light: #64748b;
+  --color-muted: #94a3b8;
+  --color-border: rgba(15, 23, 42, 0.08);
+  --color-border-light: rgba(15, 23, 42, 0.04);
 
-  /* Shadows with warmth */
-  --shadow-sm: 0 1px 3px rgba(26, 22, 17, 0.06);
-  --shadow-md: 0 4px 16px rgba(26, 22, 17, 0.08);
-  --shadow-lg: 0 12px 40px rgba(26, 22, 17, 0.12);
-  --shadow-xl: 0 20px 60px rgba(26, 22, 17, 0.16);
+  /* Shadows — Softer, more elevated */
+  --shadow-sm: 0 2px 4px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 16px 40px rgba(15, 23, 42, 0.08);
+  --shadow-xl: 0 24px 64px rgba(15, 23, 42, 0.12);
 
-  /* Radii — softer, more natural */
-  --radius-sm: 10px;
+  /* Radii — slightly more modern/smooth */
+  --radius-sm: 12px;
   --radius-md: 16px;
   --radius-lg: 24px;
   --radius-xl: 32px;
@@ -45,8 +45,8 @@
   --space-4xl: 5.5rem;
   --space-5xl: 7rem;
 
-  --transition: 200ms ease;
-  --transition-slow: 350ms ease;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ===================== RESET ===================== */
@@ -65,7 +65,7 @@ body {
   min-height: 100dvh;
   background: var(--color-background);
   color: var(--color-text);
-  font-family: "Poppins", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 16px;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
@@ -110,7 +110,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-family: "Playfair Display", serif;
+  font-family: "Cormorant Garamond", serif;
   line-height: 1.15;
   letter-spacing: -0.01em;
   color: var(--color-secondary);
@@ -209,10 +209,10 @@ p {
   display: inline-block;
   margin: 0 0 0.75rem;
   color: var(--color-primary-deep);
-  font-family: "Poppins", sans-serif;
-  font-size: 0.8rem;
+  font-family: "Outfit", sans-serif;
+  font-size: 0.85rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
 }
 
@@ -361,9 +361,11 @@ p {
   position: sticky;
   top: 0;
   z-index: 1000;
-  border-bottom: 1px solid var(--color-border-light);
-  background: rgba(250, 247, 242, 0.88);
-  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(253, 251, 249, 0.75);
+  backdrop-filter: blur(24px);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03);
+  transition: background-color var(--transition);
 }
 
 .nav-shell {
@@ -371,7 +373,7 @@ p {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  min-height: 72px;
+  min-height: 76px;
 }
 
 .brand {
@@ -393,10 +395,10 @@ p {
   border-radius: 50%;
   background: linear-gradient(145deg, var(--color-primary), var(--color-primary-light));
   color: #fff;
-  font-family: "Playfair Display", serif;
-  font-size: 1.05rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.15rem;
   font-weight: 700;
-  box-shadow: 0 4px 12px rgba(184, 116, 45, 0.3);
+  box-shadow: 0 4px 16px rgba(201, 138, 44, 0.35);
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -698,7 +700,7 @@ p {
 
 .page-copy h1,
 .hero-copy h1 {
-  font-family: "Playfair Display", serif;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .page-copy h1 {
@@ -1224,7 +1226,7 @@ p {
 
 .cta-banner h2 {
   color: #f5f0e8;
-  font-family: "Playfair Display", serif;
+  font-family: "Cormorant Garamond", serif;
   margin: 0;
 }
 
@@ -1456,44 +1458,71 @@ p {
 @media (max-width: 960px) {
   .mobile-toggle {
     display: inline-flex;
+    z-index: 2000;
   }
 
   .site-nav {
     position: fixed;
-    top: 72px;
-    right: 1rem;
-    left: 1rem;
-    display: grid;
-    gap: 0.2rem;
-    padding: 0.8rem;
-    border-radius: var(--radius-lg);
-    background: rgba(28, 32, 40, 0.97);
-    box-shadow: var(--shadow-xl);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: 0;
+    background: rgba(15, 23, 42, 0.98);
+    backdrop-filter: blur(20px);
+    box-shadow: none;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-8px);
+    transform: translateY(10px);
     transition:
-      opacity var(--transition),
-      visibility var(--transition),
-      transform var(--transition);
+      opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+      visibility 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .site-nav a {
-    color: rgba(255, 255, 255, 0.75);
-    padding: 0.7rem 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-family: "Cormorant Garamond", serif;
   }
 
   .site-nav a:hover,
   .site-nav a:focus-visible,
   .site-nav a[aria-current="page"] {
-    background: rgba(255, 255, 255, 0.08);
+    background: transparent;
     color: #fff;
+    transform: scale(1.05);
+  }
+
+  .site-nav a::before {
+    display: none;
   }
 
   .site-nav.is-open {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+  }
+
+  .mobile-toggle[aria-expanded="true"] span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    background: #fff;
+  }
+
+  .mobile-toggle[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-toggle[aria-expanded="true"] span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    background: #fff;
   }
 
   .hero-grid,

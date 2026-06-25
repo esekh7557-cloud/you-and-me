@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | You and Me Multi Cuisine</title>
+    <meta
+      name="description"
+      content="Login to You and Me Multi Cuisine."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <style>
+      .login-section {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--color-background);
+      }
+      .login-panel {
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body class="loading">
+    <main id="main-content">
+      <section class="login-section section">
+        <div class="shell">
+          <article class="form-panel reveal login-panel">
+            <div style="text-align: center; margin-bottom: 2rem;">
+              <a class="brand" href="#" aria-label="You and Me Multi Cuisine home" style="justify-content: center;">
+                <span class="brand-mark">YM</span>
+                <span class="brand-copy" style="text-align: left;">
+                  <strong>You and Me</strong>
+                  <small>Multi Cuisine • Arpora, Goa</small>
+                </span>
+              </a>
+            </div>
+            <h2 style="margin-top: 0; font-family: 'Playfair Display', serif; text-align: center;">Welcome Back</h2>
+            <p class="muted" style="margin-top: 0; text-align: center; margin-bottom: 2rem;">
+              Please sign in to access the system.
+            </p>
+            <form class="form-grid" id="login-form">
+              <div class="field">
+                <label for="login-email">Email</label>
+                <input id="login-email" name="email" type="email" value="test@example.com" required />
+              </div>
+              <div class="field">
+                <label for="login-password">Password</label>
+                <input id="login-password" name="password" type="password" value="password123" required />
+              </div>
+              <button class="btn" type="submit" style="width: 100%;">Sign In</button>
+              <p class="form-status" id="login-status" aria-live="polite" style="text-align: center; color: red;"></p>
+            </form>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

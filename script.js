@@ -18,7 +18,6 @@ onReady(() => {
   initLogin();
   initMobileNav();
   initActiveNavigation();
-  initRevealAnimations();
   initMenuFilters();
   initMenuOrders();
   initGalleryFilters();
@@ -26,10 +25,11 @@ onReady(() => {
   initForms();
   initAdminPanel();
   initYear();
+  initRevealAnimations();
 });
 
 const RESTAURANT_DB_NAME = "you-and-me-restaurant-local";
-const RESTAURANT_DB_VERSION = 1;
+const RESTAURANT_DB_VERSION = 2;
 const RESTAURANT_DB_STORES = ["reservations", "orders", "messages"];
 const RESTAURANT_DB_FALLBACK_KEY = "youAndMeRestaurantLocalDatabase";
 let restaurantDatabasePromise = null;
@@ -327,7 +327,7 @@ function initRevealAnimations() {
         }, 100);
       });
     },
-    { threshold: 0.14 }
+    { threshold: 0 }
   );
 
   items.forEach((item) => observer.observe(item));
@@ -518,7 +518,14 @@ function initMenuOrders() {
   form?.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    if (!(form instanceof HTMLFormElement) || !form.reportValidity() || !cart.length) {
+    if (!(form instanceof HTMLFormElement) || !form.reportValidity()) {
+      return;
+    }
+
+    if (!cart.length) {
+      if (status) {
+        status.textContent = "Please add at least one dish from the menu to your order.";
+      }
       return;
     }
 
@@ -1045,6 +1052,10 @@ function buildAdminRecordCard(storeName, record) {
   title.textContent = getRecordTitle(storeName, record);
   copy.append(eyebrow, title);
 
+  const statusWrap = document.createElement("div");
+  statusWrap.className = "admin-status-wrap";
+  statusWrap.dataset.statusColor = record.status || "new";
+
   const status = document.createElement("select");
   status.className = "admin-status-select";
   status.dataset.recordStatus = "";
@@ -1059,7 +1070,8 @@ function buildAdminRecordCard(storeName, record) {
     status.append(option);
   });
 
-  header.append(copy, status);
+  statusWrap.append(status);
+  header.append(copy, statusWrap);
 
   const details = document.createElement("div");
   details.className = "admin-detail-grid";

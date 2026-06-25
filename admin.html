@@ -56,7 +56,7 @@
 
     <main id="main-content">
       <section class="page-hero">
-        <div class="shell page-hero-panel reveal">
+        <div class="shell page-hero-panel">
           <div class="page-copy">
             <p class="eyebrow">Admin Panel</p>
             <h1>Manage orders, reservations, and messages</h1>
@@ -67,53 +67,67 @@
         </div>
       </section>
 
-      <section class="section" data-admin-root>
-        <div class="shell admin-dashboard">
-          <div class="admin-summary-grid">
-            <article class="admin-stat-card reveal">
-              <span>Reservations</span>
-              <strong data-admin-count="reservations">0</strong>
-            </article>
-            <article class="admin-stat-card reveal">
-              <span>Orders</span>
-              <strong data-admin-count="orders">0</strong>
-            </article>
-            <article class="admin-stat-card reveal">
-              <span>Messages</span>
-              <strong data-admin-count="messages">0</strong>
-            </article>
-          </div>
-
-          <div class="admin-control-bar reveal">
-            <div class="filter-row admin-tabs" aria-label="Admin sections">
-              <button class="filter-chip" type="button" data-admin-tab="reservations" aria-pressed="true">
+      <section class="section admin-section" data-admin-root>
+        <div class="shell admin-dashboard-layout">
+          <!-- Sidebar -->
+          <aside class="admin-sidebar">
+            <div class="admin-summary-grid">
+              <article class="admin-stat-card">
+                <span class="stat-icon">📅</span>
+                <div class="stat-content">
+                  <span>Reservations</span>
+                  <strong data-admin-count="reservations">0</strong>
+                </div>
+              </article>
+              <article class="admin-stat-card">
+                <span class="stat-icon">🛍️</span>
+                <div class="stat-content">
+                  <span>Orders</span>
+                  <strong data-admin-count="orders">0</strong>
+                </div>
+              </article>
+              <article class="admin-stat-card">
+                <span class="stat-icon">✉️</span>
+                <div class="stat-content">
+                  <span>Messages</span>
+                  <strong data-admin-count="messages">0</strong>
+                </div>
+              </article>
+            </div>
+            
+            <nav class="admin-tabs" aria-label="Admin sections">
+              <button class="admin-tab-btn" type="button" data-admin-tab="reservations" aria-pressed="true">
                 Reservations
               </button>
-              <button class="filter-chip" type="button" data-admin-tab="orders" aria-pressed="false">
+              <button class="admin-tab-btn" type="button" data-admin-tab="orders" aria-pressed="false">
                 Orders
               </button>
-              <button class="filter-chip" type="button" data-admin-tab="messages" aria-pressed="false">
+              <button class="admin-tab-btn" type="button" data-admin-tab="messages" aria-pressed="false">
                 Messages
               </button>
-            </div>
+            </nav>
+          </aside>
 
-            <div class="admin-tools">
+          <!-- Main Content -->
+          <div class="admin-main">
+            <div class="admin-control-bar">
               <div class="search-wrap admin-search">
-                <label for="admin-search">Search records</label>
-                <input id="admin-search" type="search" data-admin-search placeholder="Name, phone, status, dish" />
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <label for="admin-search" class="sr-only">Search records</label>
+                <input id="admin-search" type="search" data-admin-search placeholder="Search name, phone, status..." />
               </div>
               <div class="btn-row admin-action-row">
-                <button class="btn btn-secondary" type="button" data-admin-export>Export CSV</button>
-                <button class="btn btn-danger" type="button" data-admin-clear>Clear View</button>
+                <button class="btn btn-secondary btn-sm" type="button" data-admin-export>Export CSV</button>
+                <button class="btn btn-danger btn-sm" type="button" data-admin-clear>Clear Data</button>
               </div>
             </div>
+
+            <p class="database-status">
+              Local database mode: <strong data-database-mode>Loading</strong>
+            </p>
+
+            <div class="admin-list" data-admin-list></div>
           </div>
-
-          <p class="database-status reveal">
-            Local database: <strong data-database-mode>Loading</strong>
-          </p>
-
-          <div class="admin-list" data-admin-list></div>
         </div>
       </section>
     </main>
